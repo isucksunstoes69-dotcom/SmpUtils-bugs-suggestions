@@ -1,0 +1,1658 @@
+on load:
+	send "dependecies skript skbee skreflect skript-particle (MAYBE)" to player
+	if {NethBanOption} is not set:
+		set {NethBanOption} to "&cDisabled"
+	if {PvpBanOption} is not set:
+		set {PvpBanOption} to "&cDisabled"
+	if {PearlBanOption} is not set:
+		set {PearlBanOption} to "&cDisabled"
+	if {banPotionOption} is not set:
+		set {banPotionOption} to "&cDisabled"
+	if {maceOneTimeCraftOption} is not set:
+		set {maceOneTimeCraftOption} to "&cDisabled"
+	if {banMaceOption} is not set:
+		set {banMaceOption} to "&cDisabled"
+	if {maceStunsShieldOption} is not set:
+		set {maceStunsShieldOption} to "&cDisabled"
+	if {banPearlOption} is not set:
+		set {banPearlOption} to "&cDisabled"
+	if {lifestealPearlOption} is not set:
+		set {lifestealPearlOption} to "&cDisabled"
+	if {allowNetherOption} is not set:
+		set {allowNetherOption} to "&aEnabled"
+	if {allowEndOption} is not set:
+		set {allowEndOption} to "&aEnabled"
+	if {maceCooldown} is not set:
+		set {maceCooldown} to 5
+	if {sharpnessLevel} is not set:
+		set {sharpnessLevel} to 5
+	if {protectionLevel} is not set:
+		set {protectionLevel} to 4
+	if {banCrystalPvpOption} is not set:
+		set {banCrystalPvpOption} to "&cDisabled"
+	if {banTier2PotionsOption} is not set:
+		set {banTier2PotionsOption} to "&cDisabled"
+	if {banStrengthPotionsOption} is not set:
+		set {banStrengthPotionsOption} to "&cDisabled"
+	if {ban::strength} is not set:
+		set {ban::strength} to "&cDisabled"
+	if {ban::swiftness} is not set:
+		set {ban::swiftness} to "&cDisabled"
+	if {ban::regeneration} is not set:
+		set {ban::regeneration} to "&cDisabled"
+	if {ban::luck} is not set:
+		set {ban::luck} to "&cDisabled"
+	if {ban::fireresistance} is not set:
+		set {ban::fireresistance} to "&cDisabled"
+	if {ban::healing} is not set:
+		set {ban::healing} to "&cDisabled"
+	if {ban::harming} is not set:
+		set {ban::harming} to "&cDisabled"
+	if {ban::jump} is not set:
+		set {ban::jump} to "&cDisabled"
+	if {ban::nightvision} is not set:
+		set {ban::nightvision} to "&cDisabled"
+	if {ban::invisibility} is not set:
+		set {ban::invisibility} to "&cDisabled"
+	if {ban::waterbreathing} is not set:
+		set {ban::waterbreathing} to "&cDisabled"
+	if {ban::slowfalling} is not set:
+		set {ban::slowfalling} to "&cDisabled"
+	if {ban::turtlemaster} is not set:
+		set {ban::turtlemaster} to "&cDisabled"
+	if {ban::poison} is not set:
+		set {ban::poison} to "&cDisabled"
+	if {ban::weakness} is not set:
+		set {ban::weakness} to "&cDisabled"
+	if {ban::slowness} is not set:
+		set {ban::slowness} to "&cDisabled"
+	if {ban::all} is not set:
+		set {ban::all} to "&cDisabled"
+	if {maceCrafted} is not set:
+		set {maceCrafted} to false
+	if {healthIndicatorOption} is not set:
+		set {healthIndicatorOption} to "&cDisabled"
+	if {e-gapCooldown} is not set:
+		set {e-gapCooldown} to 0
+	if {pearlCooldown} is not set:
+		set {pearlCooldown} to 0
+	if {windChargeCooldown} is not set:
+		set {windChargeCooldown} to 0.5
+	if {nakedProtectionOption} is not set:
+		set {nakedProtectionOption} to "&cDisabled"
+	if {shieldCooldown} is not set:
+		set {shieldCooldown} to 0.5
+	if {banVillagerKillingOption} is not set:
+		set {banVillagerKillingOption} to "&cDisabled"
+	if {banMinecartOption} is not set:
+		set {banMinecartOption} to "&cDisabled"
+	if {ritualRadiusOption} is not set:
+		set {ritualRadiusOption} to 5
+	if {ritualDurationOption} is not set:
+		set {ritualDurationOption} to 1
+	if {ritualColorOption} is not set:
+		set {ritualColorOption} to "&9Blue"
+	if {ban::strength2} is not set:
+		set {ban::strength2} to "&cDisabled"
+	if {ban::swiftness2} is not set:
+		set {ban::swiftness2} to "&cDisabled"
+	if {ban::regeneration2} is not set: 
+		set {ban::regeneration2} to "&cDisabled"
+	if {ban::luck2} is not set: 
+		set {ban::luck2} to "&cDisabled"
+	if {ban::fireresistance2} is not set: 
+		set {ban::fireresistance2} to "&cDisabled"
+	if {ban::healing2} is not set: 
+		set {ban::healing2} to "&cDisabled"
+	if {ban::harming2} is not set: 
+		set {ban::harming2} to "&cDisabled"
+	if {ban::jump2} is not set: 
+		set {ban::jump2} to "&cDisabled"
+	if {ban::nightvision2} is not set: 
+		set {ban::nightvision2} to "&cDisabled"
+	if {ban::invisibility2} is not set: 
+		set {ban::invisibility2} to "&cDisabled"
+	if {ban::waterbreathing2} is not set: 
+		set {ban::waterbreathing2} to "&cDisabled"
+	if {ban::slowfalling2} is not set: 
+		set {ban::slowfalling2} to "&cDisabled"
+	if {ban::turtlemaster2} is not set: 
+		set {ban::turtlemaster2} to "&cDisabled"
+	if {ban::poison2} is not set: 
+		set {ban::poison2} to "&cDisabled"
+	if {ban::weakness2} is not set: 
+		set {ban::weakness2} to "&cDisabled"
+	if {ban::slowness2} is not set: 
+		set {ban::slowness2} to "&cDisabled"
+	if {LungeSwapCooldown} is not set:
+		set {LungeSwapCooldown} to 5
+	if {banBedBomingOption} is not set:
+		set {banBedBomingOption} to "&cDisabled"
+	if {FasterHappyGhastOption} is not set:
+		set {FasterHappyGhastOption} to "&aEnabled"
+	if {gapCooldown} is not set:
+		set {gapCooldown} to 0
+	if {SpecDeathOption} is not set:
+		set {SpecDeathOption} to "&cDisabled"
+
+
+	
+
+	
+	
+
+#█▀▀ █░█ █ 
+#█▄█ █▄█ █
+
+function OpenPage1(p: player):
+	set {_gui} to chest inventory with 5 rows named "              &8sᴇᴛᴛɪɴɢs"
+	set slot 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 37, 38, 41, 42, 43 and 44 of {_gui} to gray stained glass pane named "&l"
+	set slot 0 of {_gui} to paper named "&6ʜᴇʟᴘ" with lore "&7ᴛᴏ ʟɪᴍɪᴛ ᴀɴ ɪᴛᴇᴍ ᴅᴏ /ɪᴛᴇᴍʟɪᴍɪᴛ <ɴᴜᴍ> ᴡʜɪʟᴇ ʜᴏʟᴅɪɴɢ ᴀɴ ɪᴛᴇᴍ","&7ᴛᴏ sᴛᴀʀᴛ ᴀ ʀɪᴛᴜᴀʟ ᴅᴏ /ʀɪᴛᴜᴀʟ ᴡʜɪʟᴇ ʜᴏʟᴅɪɴɢ ᴀɴ ɪᴛᴇᴍ", "&7ᴛᴏ sᴛᴀʀᴛ ᴛʜᴇ sᴇʀᴠᴇʀ ᴅᴏ /sᴛᴀʀᴛ", "", "&cᴄʀᴇᴅɪᴛs: ғᴀᴋᴇᴍᴏᴏɴ", "&cᴍʏ ᴅɪsᴄᴏʀᴅ: 1ᴄᴀᴛsᴀʀᴇᴄᴏᴏʟ."
+	set slot 10 of {_gui} to netherite ingot named "&6ɴᴇᴛʜᴇʀɪᴛᴇ ʙᴀɴ: %{NethBanOption}%"
+	set slot 11 of {_gui} to netherite sword named "&6ᴘᴠᴘ ʙᴀɴ: %{PvpBanOption}%"
+	set slot 13 of {_gui} to potion named "&6ᴘᴏᴛɪᴏɴ ʙᴀɴ" with lore "&a▐&7▌ ʟᴍʙ ᴛᴏ ʙᴀɴ/ᴜɴʙᴀɴ ᴘᴏᴛɪᴏɴ ᴇғғᴇᴄᴛs"
+	set slot 12 of {_gui} to end crystal named "&6ᴄʀʏsᴛᴀʟ ᴘᴠᴘ: %{banCrystalPvpOption}%"
+	set slot 22 of {_gui} to brewing stand named "&6ᴘᴏᴛɪᴏɴs" with lore "&7ʙᴀɴ ᴛɪᴇʀ 2 ᴘᴏᴛɪᴏɴs: %{banTier2PotionsOption}%", "" and "&cɴᴏᴛᴇ: ᴛᴏ ʙᴀɴ sᴘᴇᴄᴇғɪᴄ ᴘᴏᴛɪᴏɴs ᴄʜᴇᴄᴋ ᴛʜᴇ 2ɴᴅ ᴘᴀɢᴇ"
+	set slot 14 of {_gui} to mace named "&6ᴍᴀᴄᴇ" with lore "&7ᴏɴᴇ ᴛɪᴍᴇ ᴄʀᴀғᴛ: %{maceOneTimeCraftOption}%", "&7ʙᴀɴ ᴛʜᴇ ᴍᴀᴄᴇ: %{banMaceOption}%", "&7ᴍᴀᴄᴇ sᴛᴜɴs sʜɪᴇʟᴅ: %{maceStunsShieldOption}%", "", "&a▐&7▌ ʟᴍʙ ғᴏʀ ᴏᴘᴛɪᴏɴ 1", "&7▐&a▌&7 ʀᴍʙ ғᴏʀ ᴏᴘᴛɪᴏɴ 2", "&a ◎&7 ᴅʀᴏᴘ ғᴏʀ ᴏᴘᴛɪᴏɴ 3" and "&a ✘&7 sʜɪғᴛ ʟᴍʙ ᴛᴏ ʀᴇsᴇᴛ ᴏɴᴇ ᴛɪᴍᴇ ᴍᴀᴄᴇ"
+	set slot 15 of {_gui} to ender pearl named "&6ᴘᴇᴀʀʟs" with lore "&7ʙᴀɴ ᴘᴇᴀʀʟs: %{banPearlOption}%", "&7ʟɪғᴇsᴛᴇᴀʟ ᴘᴇᴀʀʟ: %{lifestealPearlOption}%"
+	set slot 19 of {_gui} to mace named "&6ᴍᴀＣＥ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ ᴍᴀᴄᴇ sʜᴏᴜʟᴅ ʙᴇ sᴛᴜɴɴᴇᴅ ғᴏʀ ᴀғᴛᴇʀ ᴜsɪɴɢ ɪs: %{maceCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 20 of {_gui} to diamond sword named "&6sʜᴀʀᴘɴᴇss" with lore "&7sʜᴀʀᴘɴᴇss ʟᴇᴠᴇʟ: %{sharpnessLevel}%/5", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ᴜᴘɢʀᴀᴅᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴏᴡɴɢʀᴀᴅᴇ"
+	set slot 21 of {_gui} to diamond chestplate named "&6ᴘʀᴏᴛᴇᴄᴛɪᴏɴ" with lore "&7ᴘʀᴏᴛᴇᴄᴛɪᴏɴ ʟᴇᴠᴇʟ: %{protectionLevel}%/4", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ᴜᴘɢʀᴀᴅᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴏᴡɴɢʀᴀᴅᴇ"
+	set slot 16 of {_gui} to end stone named "&6ᴅɪᴍᴇɴsɪᴏɴs" with lore "&7ᴀʟʟᴏᴡ ɴᴇᴛʜᴇʀ: %{allowNetherOption}%", "&7ᴀʟʟᴏᴡ ᴇɴᴅ: %{allowEndOption}%", "", "&a▐&7▌ ʟᴍʙ ғᴏʀ ᴏᴘᴛɪᴏɴ 1" and "&7▐&a▌&7 ʀᴍʙ ғᴏʀ ᴏᴘᴛɪᴏɴ 2"
+	set slot 23 of {_gui} to splash potion of strength named "&6sᴛʀᴇɴɢᴛʜ ʙᴀɴ" with lore "&7ʙᴀɴ sᴛʀᴇɴɢᴛʜ ᴘᴏᴛɪᴏɴs: %{banStrengthPotionsOption}%"
+	set slot 24 of {_gui} to wind charge named "&6ᴡɪɴᴅᴄʜᴀʀɢᴇ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ ᴡɪɴᴅᴄʜᴀʀɢᴇ ᴄᴏᴏʟᴅᴏᴡɴ sʜᴏᴜʟᴅ ʙᴇ: %{windChargeCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 29 of {_gui} to enchanted golden apple named "&6ᴇɴᴄʜᴀɴᴛᴇᴅ ᴀᴘᴘʟᴇ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ ᴇɢᴀᴘ ᴄᴏᴏʟᴅᴏᴡɴ sʜᴏᴜʟᴅ ʙᴇ: %{e-gapCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 28 of {_gui} to ender pearl named "&6ᴇɴᴅᴇʀ ᴘᴇᴀʀʟ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ ᴘᴇᴀʀʟ ᴄᴏᴏʟᴅᴏᴡɴ sʜᴏᴜʟᴅ ʙᴇ: %{pearlCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 25 of {_gui} to nether star named "&6ʜᴇᴀʟᴛʜ ɪɴᴅɪᴄᴀᴛᴏʀ" with lore "&7ʙᴜɪʟᴛ-ɪɴ ʜᴇᴀʟᴛʜ ɪɴᴅɪᴄᴀᴛᴏʀ: %{healthIndicatorOption}%"
+	set slot 30 of {_gui} to leather helmet named "&6ɴᴀᴋᴇᴅ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ" with lore "&7ɴᴀᴋᴇᴅ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ: %{nakedProtectionOption}%"
+	set slot 31 of {_gui} to shield named "&6sʜɪᴇʟᴅ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ sʜɪᴇʟᴅ sʜᴏᴜʟᴅ ʙᴇ sᴛᴜɴɴᴇᴅ ғᴏʀ: %{shieldCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 32 of {_gui} to villager spawn egg named "&6ᴠɪʟLAGER ᴋɪʟʟɪɴɢ" with lore "&7ʙᴀɴ ᴠɪʟLAGER ᴋɪʟʟɪɴɢ: %{banVillagerKillingOption}%"
+	set slot 33 of {_gui} to minecart with tnt named "&6ᴛɴᴛ ᴍɪɴᴇᴄᴀʀᴛꜱ" with lore "&7ʙᴀɴ ᴛɴᴛ ᴍɪɴᴇᴄᴀʀᴛꜱ: %{banMinecartOption}%"
+	set slot 34 of {_gui} to echo shard named "&6ʀɪᴛᴜᴀʟ" with lore "&7ᴇᴅɪᴛ ᴄʀᴀꜰᴛᴀʙʟᴇ ɪᴛᴇᴍꜱ ᴛʜᴀᴛ sᴛᴀʀᴛ ᴀ ʀɪᴛᴜᴀʟ", "", "&7ᴄᴏʟᴏʀ: %{ritualColorOption}%", "&7ᴅᴜʀᴀᴛɪᴏɴ: &6%{ritualDurationOption}%m", "&7ʀᴀᴅɪᴜꜱ: &6%{ritualRadiusOption}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ᴇᴅɪᴛ ʀɪᴛᴜᴀʟ ɪᴛᴇᴍ" and "&7▐&a▌&7 ʀᴍʙ ꜰᴏʀ ᴍᴏʀᴇ ᴏᴘᴛɪᴏɴꜱ"
+	set slot 39 of {_gui} to spectral arrow named "&6ʟᴀꜱᴛ ᴘᴀɢᴇ"
+	set slot 41 of {_gui} to spectral arrow named "&6ɴᴇxᴛ ᴘᴀɢᴇ"
+	set slot 40 of {_gui} to book named "&6ᴘᴀɢᴇ" with lore "&7ᴘᴀɢᴇ: 1"
+	open {_gui} to {_p}
+
+function PotionGUI(p: player):
+	set {_gui} to chest inventory with 5 rows named "              &8ᴘᴏᴛɪᴏɴ ɢᴜɪ"
+	set slot 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 37, 38, 39, 40, 41, 42, 43 of {_gui} to gray stained glass pane named "&l"
+	
+	set slot 10 of {_gui} to splash potion of strength named "&6sᴛʀᴇɴɢᴛʜ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::strength}%", "&7ʙᴀɴᴛ2: %{ban::strength2}%"
+	set slot 11 of {_gui} to splash potion of swiftness named "&6sᴡɪғᴛɴᴇss ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::swiftness}%", "&7ʙᴀɴᴛ2: %{ban::swiftness2}%"
+	set slot 12 of {_gui} to splash potion of regeneration named "&6ʀᴇɢᴇɴᴇʀᴀᴛɪᴏɴ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::regeneration}%", "&7ʙᴀɴᴛ2: %{ban::regeneration2}%"
+	set slot 13 of {_gui} to splash potion of luck named "&6ʟᴜᴄᴋ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::luck}%", "&7ʙᴀɴᴛ2: %{ban::luck2}%"
+	set slot 14 of {_gui} to splash potion of fire resistance named "&6ғɪʀᴇ ʀᴇsɪsᴛᴀɴᴄᴇ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::fireresistance}%", "&7ʙᴀɴᴛ2: %{ban::fireresistance2}%"
+	set slot 15 of {_gui} to splash potion of instant health named "&6ɪɴsᴛᴀɴᴛ ʜᴇᴀʟᴛʜ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::healing}%", "&7ʙᴀɴᴛ2: %{ban::healing2}%"
+	set slot 16 of {_gui} to splash potion of instant damage named "&6ɪɴsᴛᴀɴᴛ ᴅᴀᴍᴀɢᴇ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::harming}%", "&7ʙᴀɴᴛ2: %{ban::harming2}%"
+
+	set slot 19 of {_gui} to splash potion of leaping named "&6ᴊᴜᴍᴘ ʙᴏᴏsᴛ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::jump}%", "&7ʙᴀɴᴛ2: %{ban::jump2}%"
+	set slot 20 of {_gui} to splash potion of night vision named "&6ɴɪɢʜᴛ ᴠɪsɪᴏɴ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::nightvision}%", "&7ʙᴀɴᴛ2: %{ban::nightvision2}%"
+	set slot 21 of {_gui} to splash potion of invisibility named "&6ɪɴᴠɪsɪʙɪʟɪᴛʏ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::invisibility}%", "&7ʙᴀɴᴛ2: %{ban::invisibility2}%"
+	set slot 22 of {_gui} to splash potion of water breathing named "&6ᴡᴀᴛᴇʀ ʙʀᴇᴀᴛʜɪɴɢ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::waterbreathing}%", "&7ʙᴀɴᴛ2: %{ban::waterbreathing2}%"
+	set slot 23 of {_gui} to splash potion of slow falling named "&6sʟᴏᴡ ғᴀʟʟɪɴɢ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::slowfalling}%", "&7ʙᴀɴᴛ2: %{ban::slowfalling2}%"
+	set slot 24 of {_gui} to splash potion of turtle master named "&6ᴛᴜʀᴛʟᴇ ᴍᴀsᴛᴇʀ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::turtlemaster}%", "&7ʙᴀɴᴛ2: %{ban::turtlemaster2}%"
+	set slot 25 of {_gui} to splash potion of poison named "&6ᴘᴏɪsᴏɴ ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::poison}%", "&7ʙᴀɴᴛ2: %{ban::poison2}%"
+
+	set slot 28 of {_gui} to splash potion of weakness named "&6ᴡᴇᴀᴋɴᴇss ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::weakness}%", "&7ʙᴀɴᴛ2: %{ban::weakness2}%"
+	set slot 29 of {_gui} to splash potion of slowness named "&6sʟᴏᴡɴᴇss ʙᴀɴ" with lore "&7ʙᴀɴ: %{ban::slowness}%", "&7ʙᴀɴᴛ2: %{ban::slowness2}%"
+
+	set slot 44 of {_gui} to splash potion named "&6ʙᴀɴ ᴀʟʟ ᴘᴏᴛɪᴏɴs" with lore "&7ʙᴀɴ ᴀʟʟ ᴘᴏᴛɪᴏɴs: %{ban::all}%"
+	set slot 43 of {_gui} to barrier named "&6ʙᴀᴄᴋ" with lore "&7ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ sᴇᴛᴛɪɴɢs ɢᴜɪ"
+
+	open {_gui} to {_p}
+
+function RitualOptions(p: player):
+	set {_gui} to hopper inventory named "          &8ʀɪᴛᴜᴀʟ sᴇᴛᴛɪɴɢs"
+	set slot 1 of {_gui} to snowball named "&6ʀɪᴛᴜᴀʟ ʀᴀᴅɪᴜs" with lore "&7ʀᴀᴅɪᴜs: &6%{ritualRadiusOption}%", "", "&a▌&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ʙʏ 1", "&a▌&7▌ ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ʙʏ 1" and "&csʜɪғᴛ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ/ᴅᴇᴄʀᴇᴀsᴇ ʙʏ 10"
+	set slot 2 of {_gui} to clock named "&6ʀɪᴛᴜᴀʟ ᴅᴜʀᴀᴛɪᴏɴ" with lore "&7ᴅᴜʀᴀᴛɪᴏɴ: &6%{ritualDurationOption}%m", "", "&a▌&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ʙʏ 1m", "&a▌&7▌ ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ʙʏ 1m" and "&csʜɪғᴛ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ/ᴅᴇᴄʀᴇᴀsᴇ ʙʏ 10m"
+	set slot 3 of {_gui} to ink sac named "&6ʀɪᴛᴜᴀʟ ᴘᴀʀᴛɪᴄʟᴇ ᴄᴏʟᴏʀ" with lore "&7ᴄᴏʟᴏʀ: %{ritualColorOption}%", "" and "&a▌&7▌ ʟᴍʙ ᴛᴏ ᴄʏᴄʟᴇ"
+	open {_gui} to {_p}
+	
+
+function OpenPage2(p: player):
+	set {_gui} to chest inventory with 5 rows named "              &8ᴘᴀɢᴇ 2"
+	set slot 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 37, 38, 42, 43, 44, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 19, 30, 31, 32, 33, 34 of {_gui} to gray stained glass pane named "&l"
+	set slot 0 of {_gui} to paper named "&6ʜᴇʟᴘ" with lore "&7ᴛᴏ ʟɪᴍɪᴛ ᴀɴ ɪᴛᴇᴍ ᴅᴏ /ɪᴛᴇᴍʟɪᴍɪᴛ <ɴᴜᴍ> ᴡʜɪʟᴇ ʜᴏʟᴅɪɴɢ ᴀɴ ɪᴛᴇᴍ","&7ᴛᴏ sᴛᴀʀᴛ ᴀ ʀɪᴛᴜᴀʟ ᴅᴏ /ʀɪᴛᴜᴀʟ ᴡʜɪʟᴇ ʜᴏʟᴅɪɴɢ ᴀɴ ɪᴛᴇᴍ", "&7ᴛᴏ sᴛᴀʀᴛ ᴛʜᴇ sᴇʀᴠᴇʀ ᴅᴏ /sᴛᴀʀᴛ", "", "&cᴄʀᴇᴅɪᴛs: ғᴀᴋᴇᴍᴏᴏɴ", "&cᴍʏ ᴅɪsᴄᴏʀᴅ: 1ᴄᴀᴛsᴀʀᴇᴄᴏᴏʟ."
+	set slot 10 of {_gui} to netherite spear named "&6ʟᴜɴɢᴇ sᴡᴀᴘ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ʟᴜɴɢᴇ ᴀғᴛᴇʀ ᴜsᴀɢᴇ: %{LungeSwapCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 11 of {_gui} to red bed named "&6ʙᴇᴅ ʙᴏᴍɪɴɢ" with lore "&7ʙᴀɴ ʙᴇᴅ ʙᴏᴍɪɴɢ: %{banBedBomingOption}%"
+	set slot 12 of {_gui} to skeleton skull named "&6sᴘᴇᴄᴛᴀᴛᴏʀ" with lore "&7sᴘᴇᴄᴛᴀᴛᴏʀ ᴀғᴛᴇʀ ᴅᴇᴀᴛʜ: %{SpecDeathOption}%"
+	set slot 13 of {_gui} to white harness named "&6ʜᴀᴘᴘʏ ɢʜᴀsᴛs" with lore "&7ғᴀsᴛᴇʀ ʜᴀᴘᴘʏ ɢʜᴀsᴛs: %{FasterHappyGhastOption}%"
+	set slot 14 of {_gui} to golden apple named "&6ᴀᴘᴘʟᴇ ᴄᴏᴏʟᴅᴏᴡɴ" with lore "&7ʜᴏᴡ ʟᴏɴɢ ɢᴀᴘ ᴄᴏᴏʟᴅᴏᴡɴ sʜᴏᴜʟᴅ ʙᴇ: %{gapCooldown}%", "", "&a▐&7▌ ʟᴍʙ ᴛᴏ ɪɴᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ" and "&7▐&a▌&7 ʀᴍʙ ᴛᴏ ᴅᴇᴄʀᴇᴀsᴇ ᴠᴀʟᴜᴇ"
+	set slot 15 of {_gui} to chest named "&6ɪɴᴠsᴇᴇ" with lore "&7/ɪɴᴠsᴇᴇ <ᴘʟᴀʏᴇʀ>"
+	set slot 16 of {_gui} to ender chest named "&6ᴇɴᴅᴇʀsᴇᴇ" with lore "&7/ᴇɴᴅᴇʀsᴇᴇ <ᴘʟᴀʏᴇʀ>"
+	set slot 39 of {_gui} to spectral arrow named "&6ʟᴀꜱᴛ ᴘᴀɢᴇ"
+	set slot 41 of {_gui} to spectral arrow named "&6ɴᴇxᴛ ᴘᴀɢᴇ"
+	set slot 40 of {_gui} to book named "&6ᴘᴀɢᴇ" with lore "&7ᴘᴀɢᴇ: 2"
+	open {_gui} to {_p}
+
+function smallcaps(t: text) :: text:
+	set {_t} to lowercase {_t}
+	replace all "a" in {_t} with "ᴀ"
+	replace all "b" in {_t} with "ʙ"
+	replace all "c" in {_t} with "ᴄ"
+	replace all "d" in {_t} with "ᴅ"
+	replace all "e" in {_t} with "ᴇ"
+	replace all "f" in {_t} with "ғ"
+	replace all "g" in {_t} with "ɢ"
+	replace all "h" in {_t} with "ʜ"
+	replace all "i" in {_t} with "ɪ"
+	replace all "j" in {_t} with "ᴊ"
+	replace all "k" in {_t} with "ᴋ"
+	replace all "l" in {_t} with "ʟ"
+	replace all "m" in {_t} with "ᴍ"
+	replace all "n" in {_t} with "ɴ"
+	replace all "o" in {_t} with "ᴏ"
+	replace all "p" in {_t} with "ᴘ"
+	replace all "q" in {_t} with "ǫ"
+	replace all "r" in {_t} with "ʀ"
+	replace all "s" in {_t} with "s"
+	replace all "t" in {_t} with "ᴛ"
+	replace all "u" in {_t} with "ᴜ"
+	replace all "v" in {_t} with "ᴠ"
+	replace all "w" in {_t} with "ᴡ"
+	replace all "x" in {_t} with "x"
+	replace all "y" in {_t} with "ʏ"
+	replace all "z" in {_t} with "ᴢ"
+	return {_t}
+
+
+#█▀▀ █▀█ █▀▄▀█ █▀▄▀█ ▄▀█ █▄░█ █▀▄ █▀
+#█▄▄ █▄█ █░▀░█ █░▀░█ █▀█ █░▀█ █▄▀ ▄█
+
+command settings:
+	permission: op
+	trigger:
+		OpenPage1(player)
+ 
+command itemlimit <number>:
+    permission: op
+    trigger:
+        set {_item} to type of player's tool
+        set {_limit} to arg-1
+        
+        if {_item} is air:
+            send "&cYou must be holding an item!" to player
+            stop
+        
+        if {_limit} < 0:
+            send "&cLimit must be 0 or higher!" to player
+            stop
+        
+        if {_limit} is 0:
+            if {itemlimit::%{_item}%} is set:
+                delete {itemlimit::%{_item}%}
+                send "&aRemoved limit for &6%{_item}%" to player
+            stop
+        
+        set {itemlimit::%{_item}%} to {_limit}
+        send "&aSet limit for &6%{_item}% &ato &6%{_limit}%" to player
+
+every 20 ticks:
+    loop all players:
+        loop all items in loop-player's inventory:
+            set {_item_type} to type of loop-item
+            if {itemlimit::%{_item_type}%} is set:
+                if amount of loop-item > {itemlimit::%{_item_type}%}:
+                    set {_excess} to amount of loop-item - {itemlimit::%{_item_type}%}
+                    set amount of loop-item to {itemlimit::%{_item_type}%}
+                    drop {_excess} of {_item_type} at loop-player
+                    send "&cExcess items have been dropped!" to loop-player
+
+command /invsee <offlineplayer>:
+	permission: op
+	trigger:
+		open arg-1's inventory to player
+
+command /endersee <offlineplayer>:
+	permission: op
+	trigger:
+		open arg-1's ender chest to player    
+
+
+
+#
+
+on inventory click:
+	if name of player's current inventory is "              &8sᴇᴛᴛɪɴɢs":
+		cancel event
+		if player has permission "op":
+			
+			if index of event-slot is 10:
+				if click action is left mouse button:
+					if {NethBanOption} is "&aEnabled":
+						set {NethBanOption} to "&cDisabled"
+					else if {NethBanOption} is "&cDisabled":
+						set {NethBanOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 11:
+				if click action is left mouse button:
+					if {PvpBanOption} is "&aEnabled":
+						set {PvpBanOption} to "&cDisabled"
+					else if {PvpBanOption} is "&cDisabled":
+						set {PvpBanOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 12:
+				if click action is left mouse button:
+					if {banCrystalPvpOption} is "&aEnabled":
+						set {banCrystalPvpOption} to "&cDisabled"
+					else if {banCrystalPvpOption} is "&cDisabled":
+						set {banCrystalPvpOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 13:
+				if click action is left mouse button:
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 14:
+				if click action is left mouse button:
+					if {maceOneTimeCraftOption} is "&aEnabled":
+						set {maceOneTimeCraftOption} to "&cDisabled"
+					else if {maceOneTimeCraftOption} is "&cDisabled":
+						set {maceOneTimeCraftOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {banMaceOption} is "&aEnabled":
+						set {banMaceOption} to "&cDisabled"
+					else if {banMaceOption} is "&cDisabled":
+						set {banMaceOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is drop key:
+					if {maceStunsShieldOption} is "&aEnabled":
+						set {maceStunsShieldOption} to "&cDisabled"
+					else if {maceStunsShieldOption} is "&cDisabled":
+						set {maceStunsShieldOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is left mouse with shift:
+					set {maceCrafted} to false
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+					send "&aOne time craft mace has been reset!"
+			
+			else if index of event-slot is 15:
+				if click action is left mouse button:
+					if {banPearlOption} is "&aEnabled":
+						set {banPearlOption} to "&cDisabled"
+					else if {banPearlOption} is "&cDisabled":
+						set {banPearlOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {lifestealPearlOption} is "&aEnabled":
+						set {lifestealPearlOption} to "&cDisabled"
+					else if {lifestealPearlOption} is "&cDisabled":
+						set {lifestealPearlOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 16:
+				if click action is left mouse button:
+					if {allowNetherOption} is "&aEnabled":
+						set {allowNetherOption} to "&cDisabled"
+					else if {allowNetherOption} is "&cDisabled":
+						set {allowNetherOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {allowEndOption} is "&aEnabled":
+						set {allowEndOption} to "&cDisabled"
+					else if {allowEndOption} is "&cDisabled":
+						set {allowEndOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 19:
+				if click action is left mouse button:
+					if {maceCooldown} < 20:
+						add 1 to {maceCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {maceCooldown} > 1:
+						subtract 1 from {maceCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 20:
+				if click action is left mouse button:
+					if {sharpnessLevel} < 5:
+						add 1 to {sharpnessLevel}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {sharpnessLevel} > 1:
+						subtract 1 from {sharpnessLevel}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 21:
+				if click action is left mouse button:
+					if {protectionLevel} < 4:
+						add 1 to {protectionLevel}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {protectionLevel} > 1:
+						subtract 1 from {protectionLevel}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 22:
+				if click action is left mouse button:
+					if {banTier2PotionsOption} is "&aEnabled":
+						set {banTier2PotionsOption} to "&cDisabled"
+					else if {banTier2PotionsOption} is "&cDisabled":
+						set {banTier2PotionsOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 23:
+				if click action is left mouse button:
+					if {banStrengthPotionsOption} is "&aEnabled":
+						set {banStrengthPotionsOption} to "&cDisabled"
+					else if {banStrengthPotionsOption} is "&cDisabled":
+						set {banStrengthPotionsOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 24:
+				if click action is left mouse button:
+					if {windChargeCooldown} < 5:
+						add 0.5 to {windChargeCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {windChargeCooldown} > 0.5:
+						subtract 0.5 from {windChargeCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 29:
+				if click action is left mouse button:
+					if {e-gapCooldown} < 20:
+						add 1 to {e-gapCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {e-gapCooldown} > 1:
+						subtract 1 from {e-gapCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 28:
+				if click action is left mouse button:
+					if {pearlCooldown} < 20:
+						add 1 to {pearlCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {pearlCooldown} > 0:
+						subtract 1 from {pearlCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+					
+			else if index of event-slot is 25:
+				if click action is left mouse button:
+					if {healthIndicatorOption} is "&aEnabled":
+						set {healthIndicatorOption} to "&cDisabled"
+					else if {healthIndicatorOption} is "&cDisabled":
+						set {healthIndicatorOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 30:
+				if click action is left mouse button:
+					if {nakedProtectionOption} is "&aEnabled":
+						set {nakedProtectionOption} to "&cDisabled"
+					else if {nakedProtectionOption} is "&cDisabled":
+						set {nakedProtectionOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 31:
+				if click action is left mouse button:
+					if {shieldCooldown} < 20:
+						add 1 to {shieldCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {shieldCooldown} > 1:
+						subtract 1 from {shieldCooldown}
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 32:
+				if click action is left mouse button:
+					if {banVillagerKillingOption} is "&aEnabled":
+						set {banVillagerKillingOption} to "&cDisabled"
+					else if {banVillagerKillingOption} is "&cDisabled":
+						set {banVillagerKillingOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 25:
+				if click action is left mouse button:
+					if {healthIndicatorOption} is "&aEnabled":
+						set {healthIndicatorOption} to "&cDisabled"
+						execute console command "scoreboard objectives remove HP"
+					else if {healthIndicatorOption} is "&cDisabled":
+						set {healthIndicatorOption} to "&aEnabled"
+						execute console command "scoreboard objectives add HP health {""color"":""red"",""text"":""❤""}"
+						execute console command "scoreboard objectives setdisplay below_name HP"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 33:
+				if click action is left mouse button:
+					if {banMinecartOption} is "&aEnabled":
+						set {banMinecartOption} to "&cDisabled"
+					else if {banMinecartOption} is "&cDisabled":
+						set {banMinecartOption} to "&aEnabled"
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 34:
+				if click action is left mouse button:
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 41:
+				if click action is left mouse button:
+					OpenPage2(player)
+					play sound "block.comparator.click" to player
+
+
+			
+on inventory click:
+	if name of player's current inventory is "              &8ᴘᴀɢᴇ 2":
+		cancel event
+		if player has permission "op":
+			if index of event-slot is 39:
+				if click action is left mouse button:
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+			
+			else if index of event-slot is 10:
+				if click action is left mouse button:
+					if {LungeSwapCooldown} < 100:
+						add 1 to {LungeSwapCooldown}
+					OpenPage2(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {LungeSwapCooldown} > 1:
+						subtract 1 from {LungeSwapCooldown}
+						OpenPage2(player)
+						play sound "block.comparator.click" to player	
+
+			else if index of event-slot is 11:
+				if click action is left mouse button:
+					if {banBedBomingOption} is "&aEnabled":
+						set {banBedBomingOption} to "&cDisabled"
+						OpenPage2(player)
+						play sound "block.comparator.click" to player
+					else if {banBedBomingOption} is "&cDisabled":
+						set {banBedBomingOption} to "&aEnabled"
+						OpenPage2(player)
+						play sound "block.comparator.click" to player
+
+			else if index of event-slot is 12:
+				if click action is left mouse button:
+					if {SpecDeathOption} is "&aEnabled":
+						set {SpecDeathOption} to "&cDisabled"
+						OpenPage2(player)
+						play sound "block.comparator.click" to player
+					else if {SpecDeathOption} is "&cDisabled":
+						set {SpecDeathOption} to "&aEnabled"
+						OpenPage2(player)
+						play sound "block.comparator.click" to player
+
+			else if index of event-slot is 13:
+				if click action is left mouse button:
+					if {FasterHappyGhastOption} is "&aEnabled":
+						set {FasterHappyGhastOption} to "&cDisabled"
+						OpenPage2(player)
+						play sound "block.comparator.click" to player
+					else if {FasterHappyGhastOption} is "&cDisabled":
+						set {FasterHappyGhastOption} to "&aEnabled"
+						OpenPage2(player)
+						play sound "block.comparator.click" to player
+
+			else if index of event-slot is 14:
+				if click action is left mouse button:
+					if {gapCooldown} < 20:
+						add 1 to {gapCooldown}
+					OpenPage2(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {gapCooldown} > 1:
+						subtract 1 from {gapCooldown}
+						OpenPage2(player)
+						play sound "block.comparator.click" to player		
+
+					
+
+#█▀▀ ▄▀█ █▀█   █▀▀ █▀▄   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#█▄█ █▀█ █▀▀   █▄▄ █▄▀   █▄█ █▀▀ ░█░ █ █▄█ █░▀█					
+				
+on consume:
+	if event-item is golden apple:
+		if item cooldown of golden apple for player > 1 tick:
+			cancel event
+			stop
+		wait 2 tick
+		set item cooldown of golden apple for player to {gapCooldown} * 20 ticks
+
+
+#█░░ █░█ █▄░█ █▀▀ █▀▀   █▀ █░█░█ ▄▀█ █▀█   █▀▀ █▀▄   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#█▄▄ █▄█ █░▀█ █▄█ ██▄   ▄█ ▀▄▀▄▀ █▀█ █▀▀   █▄▄ █▄▀   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on left click:
+    if "%player's tool%" contains "spear":
+        if {spear.lunge.cd::%player's uuid%} is set:
+            cancel event
+            set velocity of player to new vector 0, 0, 0
+            stop
+        # --- your lunge code here ---
+        set {spear.lunge.cd::%player's uuid%} to true
+        wait ("%{LungeSwapCooldown}% seconds") parsed as timespan
+        delete {spear.lunge.cd::%player's uuid%}
+
+
+
+#█▄▄ █▀▀ █▀▄   █▄▄ █▀█ █▀▄▀█ █▄▄   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#█▄█ ██▄ █▄▀   █▄█ █▄█ █░▀░█ █▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on right click:
+    if {banBedBomingOption} is "&aEnabled":
+        if world of event-block contains "world_nether" or "world_the_end":
+            if event-block is white bed, light gray bed, gray bed, black bed, brown bed, red bed, orange bed, yellow bed, lime bed, green bed, cyan bed, light blue bed, blue bed, purple bed, magenta bed or pink bed:
+                cancel event
+                send "&cBed bombing is disabled!" to player
+
+#█▀ █▀█ █▀▀ █▀▀   █▀▄ █▀▀ ▄▀█ ▀█▀ █░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#▄█ █▀▀ ██▄ █▄▄   █▄▀ ██▄ █▀█ ░█░ █▀█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on respawn:
+	if {SpecDeathOption} is "&aEnabled":
+		set the player's gamemode to spectator
+
+
+
+#█▀▀ ▄▀█ █▀ ▀█▀ █▀▀ █▀█   █░█ ▄▀█ █▀█ █▀█ █▄█   █▀▀ █░█ ▄▀█ █▀ ▀█▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#█▀░ █▀█ ▄█ ░█░ ██▄ █▀▄   █▀█ █▀█ █▀▀ █▀▀ ░█░   █▄█ █▀█ █▀█ ▄█ ░█░   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on spawn of happy ghast:
+	if {FasterHappyGhastOption} is "&aEnabled":
+		wait 1 tick
+		set event-entity's flying speed attribute to 0.10
+	else:
+		set event-entity's flying speed attribute to 0.05
+
+
+
+
+on inventory click:
+	if name of player's current inventory is "              &8ᴘᴏᴛɪᴏɴ ɢᴜɪ":
+		cancel event
+		if player has permission "op":
+			if index of event-slot is 43:
+				if click action is left mouse button:
+					OpenPage1(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 10:
+				if click action is left mouse button:
+					if {ban::strength} is "&aEnabled":
+						set {ban::strength} to "&cDisabled"
+					else if {ban::strength} is "&cDisabled":
+						set {ban::strength} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::strength2} is "&aEnabled":
+						set {ban::strength2} to "&cDisabled"
+					else if {ban::strength2} is "&cDisabled":
+						set {ban::strength2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 11:
+				if click action is left mouse button:
+					if {ban::swiftness} is "&aEnabled":
+						set {ban::swiftness} to "&cDisabled"
+					else if {ban::swiftness} is "&cDisabled":
+						set {ban::swiftness} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::swiftness2} is "&aEnabled":
+						set {ban::swiftness2} to "&cDisabled"
+					else if {ban::swiftness2} is "&cDisabled":
+						set {ban::swiftness2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 12:
+				if click action is left mouse button:
+					if {ban::regeneration} is "&aEnabled":
+						set {ban::regeneration} to "&cDisabled"
+					else if {ban::regeneration} is "&cDisabled":
+						set {ban::regeneration} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::regeneration2} is "&aEnabled":
+						set {ban::regeneration2} to "&cDisabled"
+					else if {ban::regeneration2} is "&cDisabled":
+						set {ban::regeneration2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 13:
+				if click action is left mouse button:
+					if {ban::luck} is "&aEnabled":
+						set {ban::luck} to "&cDisabled"
+					else if {ban::luck} is "&cDisabled":
+						set {ban::luck} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::luck2} is "&aEnabled":
+						set {ban::luck2} to "&cDisabled"
+					else if {ban::luck2} is "&cDisabled":
+						set {ban::luck2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 14:
+				if click action is left mouse button:
+					if {ban::fireresistance} is "&aEnabled":
+						set {ban::fireresistance} to "&cDisabled"
+					else if {ban::fireresistance} is "&cDisabled":
+						set {ban::fireresistance} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::fireresistance2} is "&aEnabled":
+						set {ban::fireresistance2} to "&cDisabled"
+					else if {ban::fireresistance2} is "&cDisabled":
+						set {ban::fireresistance2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 15:
+				if click action is left mouse button:
+					if {ban::healing} is "&aEnabled":
+						set {ban::healing} to "&cDisabled"
+					else if {ban::healing} is "&cDisabled":
+						set {ban::healing} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::healing2} is "&aEnabled":
+						set {ban::healing2} to "&cDisabled"
+					else if {ban::healing2} is "&cDisabled":
+						set {ban::healing2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 16:
+				if click action is left mouse button:
+					if {ban::harming} is "&aEnabled":
+						set {ban::harming} to "&cDisabled"
+					else if {ban::harming} is "&cDisabled":
+						set {ban::harming} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::harming2} is "&aEnabled":
+						set {ban::harming2} to "&cDisabled"
+					else if {ban::harming2} is "&cDisabled":
+						set {ban::harming2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 19:
+				if click action is left mouse button:
+					if {ban::jump} is "&aEnabled":
+						set {ban::jump} to "&cDisabled"
+					else if {ban::jump} is "&cDisabled":
+						set {ban::jump} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::jump2} is "&aEnabled":
+						set {ban::jump2} to "&cDisabled"
+					else if {ban::jump2} is "&cDisabled":
+						set {ban::jump2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 20:
+				if click action is left mouse button:
+					if {ban::nightvision} is "&aEnabled":
+						set {ban::nightvision} to "&cDisabled"
+					else if {ban::nightvision} is "&cDisabled":
+						set {ban::nightvision} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::nightvision2} is "&aEnabled":
+						set {ban::nightvision2} to "&cDisabled"
+					else if {ban::nightvision2} is "&cDisabled":
+						set {ban::nightvision2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 21:
+				if click action is left mouse button:
+					if {ban::invisibility} is "&aEnabled":
+						set {ban::invisibility} to "&cDisabled"
+					else if {ban::invisibility} is "&cDisabled":
+						set {ban::invisibility} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::invisibility2} is "&aEnabled":
+						set {ban::invisibility2} to "&cDisabled"
+					else if {ban::invisibility2} is "&cDisabled":
+						set {ban::invisibility2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 22:
+				if click action is left mouse button:
+					if {ban::waterbreathing} is "&aEnabled":
+						set {ban::waterbreathing} to "&cDisabled"
+					else if {ban::waterbreathing} is "&cDisabled":
+						set {ban::waterbreathing} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::waterbreathing2} is "&aEnabled":
+						set {ban::waterbreathing2} to "&cDisabled"
+					else if {ban::waterbreathing2} is "&cDisabled":
+						set {ban::waterbreathing2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 23:
+				if click action is left mouse button:
+					if {ban::slowfalling} is "&aEnabled":
+						set {ban::slowfalling} to "&cDisabled"
+					else if {ban::slowfalling} is "&cDisabled":
+						set {ban::slowfalling} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::slowfalling2} is "&aEnabled":
+						set {ban::slowfalling2} to "&cDisabled"
+					else if {ban::slowfalling2} is "&cDisabled":
+						set {ban::slowfalling2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 24:
+				if click action is left mouse button:
+					if {ban::turtlemaster} is "&aEnabled":
+						set {ban::turtlemaster} to "&cDisabled"
+					else if {ban::turtlemaster} is "&cDisabled":
+						set {ban::turtlemaster} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::turtlemaster2} is "&aEnabled":
+						set {ban::turtlemaster2} to "&cDisabled"
+					else if {ban::turtlemaster2} is "&cDisabled":
+						set {ban::turtlemaster2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 25:
+				if click action is left mouse button:
+					if {ban::poison} is "&aEnabled":
+						set {ban::poison} to "&cDisabled"
+					else if {ban::poison} is "&cDisabled":
+						set {ban::poison} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::poison2} is "&aEnabled":
+						set {ban::poison2} to "&cDisabled"
+					else if {ban::poison2} is "&cDisabled":
+						set {ban::poison2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 28:
+				if click action is left mouse button:
+					if {ban::weakness} is "&aEnabled":
+						set {ban::weakness} to "&cDisabled"
+					else if {ban::weakness} is "&cDisabled":
+						set {ban::weakness} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::weakness2} is "&aEnabled":
+						set {ban::weakness2} to "&cDisabled"
+					else if {ban::weakness2} is "&cDisabled":
+						set {ban::weakness2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 29:
+				if click action is left mouse button:
+					if {ban::slowness} is "&aEnabled":
+						set {ban::slowness} to "&cDisabled"
+					else if {ban::slowness} is "&cDisabled":
+						set {ban::slowness} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::slowness2} is "&aEnabled":
+						set {ban::slowness2} to "&cDisabled"
+					else if {ban::slowness2} is "&cDisabled":
+						set {ban::slowness2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+			else if index of event-slot is 44:
+				if click action is left mouse button:
+					if {ban::all} is "&aEnabled":
+						set {ban::all} to "&cDisabled"
+					else if {ban::all} is "&cDisabled":
+						set {ban::all} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ban::all2} is "&aEnabled":
+						set {ban::all2} to "&cDisabled"
+					else if {ban::all2} is "&cDisabled":
+						set {ban::all2} to "&aEnabled"
+					PotionGUI(player)
+					play sound "block.comparator.click" to player
+
+on inventory click:
+	if name of player's current inventory is "          &8ʀɪᴛᴜᴀʟ sᴇᴛᴛɪɴɢs":
+		cancel event
+		if player has permission "op":
+			if index of event-slot is 1:
+				if click action is left mouse button:
+					add 1 to {ritualRadiusOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+				else if click action is left mouse button with shift:
+					add 10 to {ritualRadiusOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ritualRadiusOption} > 1:
+						remove 1 from {ritualRadiusOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button with shift:
+					if {ritualRadiusOption} > 10:
+						remove 10 from {ritualRadiusOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 2:
+				if click action is left mouse button:
+					add 1 to {ritualDurationOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+				else if click action is left mouse button with shift:
+					add 10 to {ritualDurationOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button:
+					if {ritualDurationOption} > 1:
+						remove 1 from {ritualDurationOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+				else if click action is right mouse button with shift:
+					if {ritualDurationOption} > 10:
+						remove 10 from {ritualDurationOption}
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+			else if index of event-slot is 3:
+				if click action is left mouse button:
+					if {ritualColorOption} is "&9Blue":
+						set {ritualColorOption} to "&eYellow"
+					else if {ritualColorOption} is "&eYellow":
+						set {ritualColorOption} to "&bAqua"
+					else if {ritualColorOption} is "&bAqua":
+						set {ritualColorOption} to "&dFuchsia"
+					else if {ritualColorOption} is "&dFuchsia":
+						set {ritualColorOption} to "&aLime"
+					else if {ritualColorOption} is "&aLime":
+						set {ritualColorOption} to "&6Orange"
+					else if {ritualColorOption} is "&6Orange":
+						set {ritualColorOption} to "&5Purple"
+					else if {ritualColorOption} is "&5Purple":
+						set {ritualColorOption} to "&fWhite"
+					else if {ritualColorOption} is "&fWhite":
+						set {ritualColorOption} to "&0Black"
+					else if {ritualColorOption} is "&0Black":
+						set {ritualColorOption} to "&7Gray"
+					else if {ritualColorOption} is "&7Gray":
+						set {ritualColorOption} to "&cRed"
+					else if {ritualColorOption} is "&cRed":
+						set {ritualColorOption} to "&2Green"
+					else if {ritualColorOption} is "&2Green":
+						set {ritualColorOption} to "&9Blue"
+					RitualOptions(player)
+					play sound "block.comparator.click" to player
+
+
+# █▀▄▀█ ▄▀█ █▀▀ █▀▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █░▀░█ █▀█ █▄▄ ██▄   █▄█ █▀▀ ░█░ █ █▄█ █░▀█    
+
+on craft:
+	if event-item is mace:
+		if {maceOneTimeCraftOption} is "&aEnabled":
+			if {maceCrafted} is true:
+				cancel event
+				send "&cThe Mace has already been crafted!"
+			else if {maceCrafted} is false:
+				set {maceCrafted} to true
+on craft:
+	if event-item is mace:
+		if {banMaceOption} is "&aEnabled":
+			cancel event
+			send "&cMaces are banned on this server!"
+every 40 ticks:
+	if {banMaceOption} is "&aEnabled":
+		loop all players:
+			if inventory of loop-player contains mace:
+				remove all mace from loop-player
+				send "&cMaces are banned on this server!" to loop-player
+on pickup:
+	if event-item is mace:
+		if {banMaceOption} is "&aEnabled":
+			cancel event
+			send "&cMaces are banned on this server!" to player
+on damage:
+	if attacker's tool is mace:
+		if {banMaceOption} is "&aEnabled":
+			cancel event
+			remove all mace from attacker
+			send "&cMaces are banned on this server!" to attacker
+on damage:
+	if attacker's tool is mace:
+		if victim is blocking:
+			if {maceStunsShieldOption} is "&aEnabled":
+				if victim's offhand tool is shield:
+					set the cooldown of shield for victim to {shieldCooldown} * 20 ticks
+					set {_shield} to victim's offhand tool
+					set victim's offhand tool to air
+					wait 1 tick
+					set victim's offhand tool to {_shield}
+				if victim's tool is shield:
+					set the cooldown of shield for victim to {shieldCooldown} * 20 ticks
+					set {_shield} to victim's tool
+					set victim's tool to air
+					wait 1 tick
+					set victim's tool to {_shield}
+
+
+# █▀█ █▀▀ ▄▀█ █▀█ █░░   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▀▀ ██▄ █▀█ █▀▄ █▄▄   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on rightclick:
+	if {banPearlOption} is "&aEnabled":
+		if player's tool is an ender pearl:
+			cancel event
+			send "&cUsing ender pearls is not allowed!" to player
+on teleport:
+	if teleport cause is ender pearl:
+		if {lifestealPearlOption} is "&aEnabled":
+			cancel event
+			send "&cUsing ender pearls is not allowed!" to player
+
+# █▄▄ ▄▀█ █▄░█   █▀▀ █▀█ █▄█ █▀ ▀█▀ ▄▀█ █░░   █▀█ █░█ █▀█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▄█ █▀█ █░▀█   █░▀█ █▀▄ ░█░ ▄█ ░█░ █▀█ █▄▄   █▀▀ ▀▄▀ █▀▀   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on explosion:
+	if event-entity is end crystal:
+		if {banCrystalPvpOption} is "&aEnabled":
+			cancel event
+on damage:
+	if attacker is end crystal:
+		if {banCrystalPvpOption} = "&aEnabled":
+			cancel event
+on right click:
+	if {banCrystalPvpOption} = "&aEnabled":
+		if world of event-block contains "world" or "world_the_end":
+			if event-block is respawn anchor:
+				if player's tool is glowstone:
+					cancel event
+
+# █▄▄ ▄▀█ █▄░█   ▀█▀ █ █▀▀ █▀█   ▀█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█ █▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▄█ █▀█ █░▀█   ░█░ █ ██▄ █▀▄   █▄   █▀▀ █▄█ ░█░ █ █▄█ █░▀█ ▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on entity potion effect modification:
+	if {banTier2PotionsOption} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on inventory click:
+	if type of player's current inventory is a brewing stand inventory:
+		if {banTier2PotionsOption} is "&aEnabled":
+			if any:
+				click action is lmb
+				click action is rmb
+			then:
+				if player's cursor slot is glowstone dust:
+					cancel event
+					send "&cYou can't use Tier 2 potions on this server!" to player
+			if click action is swap offhand:
+				if player's offhand item is glowstone dust:
+					cancel event
+					send "&cYou can't use Tier 2 potions on this server!" to player
+			if click action is number key:
+				if player's inventory.getItem(event.getHotbarButton()) is glowstone dust:
+					cancel event
+					send "&cYou can't use Tier 2 potions on this server!" to player
+	if type of player's current inventory is a brewing stand inventory:
+		if {banTier2PotionsOption} is "&aEnabled":
+			if any:
+				click action is shift+lmb
+				click action is shift+rmb
+			then:
+				if event-item is glowstone dust:
+					cancel event
+					send "&cYou can't use Tier 2 potions on this server!" to player
+
+
+# █▄░█ ▄▀█ █▄▀ █▀▀ █▀▄   █▄▀ █ █░░ █░░ █ █▄░█ █▀▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █░▀█ █▀█ █░█ ██▄ █▄▀   █░█ █ █▄▄ █▄▄ █ █░▀█ █▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on damage:
+	if attacker is player:
+		if victim is player:
+			if victim is not attacker:
+				if {nakedProtectionOption} is "&aEnabled":
+					if helmet of victim is air:
+						if chestplate of victim is air:
+							if leggings of victim is air:
+								if boots of victim is air:
+									cancel event
+									send "&cNaked killing is not allowed!" to attacker
+
+# █▀ █░█ █ █▀▀ █░░ █▀▄   █▀▀ █▀█ █▀█ █░░ █▀▄ █▀█ █░█░█ █▄░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# ▄█ █▀█ █ ██▄ █▄▄ █▄▀   █▄▄ █▄█ █▄█ █▄▄ █▄▀ █▄█ ▀▄▀▄▀ █░▀█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on damage:
+	if victim is blocking:
+		if "%type of attacker's tool%" contains "axe":
+			wait 1 tick
+			set the cooldown of shield for victim to {shieldCooldown} * 20 ticks
+
+# █▀▀ ▄▄ █▀▀ ▄▀█ █▀█   █▀▀ █▀█ █▀█ █░░ █▀▄ █▀█ █░█░█ █▄░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# ██▄ ░░ █▄█ █▀█ █▀▀   █▄▄ █▄█ █▄█ █▄▄ █▄▀ █▄█ ▀▄▀▄▀ █░▀█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on consume:
+	if event-item is enchanted golden apple:
+		if item cooldown of enchanted golden apple for player > 1 tick:
+			cancel event
+			stop
+		wait 2 tick
+		set item cooldown of enchanted golden apple for player to {e-gapCooldown} * 20 ticks
+
+# █▀ █░█ ▄▀█ █▀█ █▀█ █▄░█ █▀▀ █▀ █▀   ▄▀█ █▄░█ █▀▄   █▀█ █▀█ █▀█ ▀█▀   █░░ █ █▀▄▀█ █ ▀█▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# ▄█ █▀█ █▀█ █▀▄ █▀▀ █░▀█ ██▄ ▄█ ▄█   █▀█ █░▀█ █▄▀   █▀▀ █▀▄ █▄█ ░█░   █▄▄ █ █░▀░█ █ ░█░   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+every 1 second:
+	loop all players:
+		loop all items in loop-player's inventory:
+			if level of sharpness on loop-item > {sharpnessLevel}:
+				if {sharpnessLevel} is 0:
+					enchant loop-item with sharpness 0
+				else if {sharpnessLevel} is 1:
+					enchant loop-item with sharpness 1
+				else if {sharpnessLevel} is 2:
+					enchant loop-item with sharpness 2
+				else if {sharpnessLevel} is 3:
+					enchant loop-item with sharpness 3
+				else if {sharpnessLevel} is 4:
+					enchant loop-item with sharpness 4
+				else if {sharpnessLevel} is 5:
+					enchant loop-item with sharpness 5
+			if level of protection on loop-item > {protectionLevel}:
+				if {protectionLevel} is 0:
+					enchant loop-item with protection 0
+				else if {protectionLevel} is 1:
+					enchant loop-item with protection 1
+				else if {protectionLevel} is 2:
+					enchant loop-item with protection 2
+				else if {protectionLevel} is 3:
+					enchant loop-item with protection 3
+				else if {protectionLevel} is 4:
+					enchant loop-item with protection 4
+
+# █▄▄ ▄▀█ █▄░█   █▄░█ █▀▀ ▀█▀ █░█ █▀▀ █▀█ █ ▀█▀ █▀▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▄█ █▀█ █░▀█   █░▀█ ██▄ ░█░ █▀█ ██▄ █▀▄ █ ░█░ ██▄   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+import:
+	org.bukkit.event.inventory.PrepareAnvilEvent
+	org.bukkit.event.inventory.PrepareSmithingEvent
+	org.bukkit.event.inventory.InventoryClickEvent
+	org.bukkit.inventory.SmithingInventory
+
+on PrepareAnvilEvent:
+	if {NethBanOption} is "&aEnabled":
+		set {_item} to event.getInventory().getFirstItem()
+		if {_item} is set:
+			if {_item} is netherite helmet, netherite chestplate, netherite leggings, netherite boots, netherite sword, netherite axe, netherite pickaxe, netherite shovel or netherite hoe:
+				event.setResult(air)
+
+on PrepareSmithingEvent:
+	if {NethBanOption} is "&aEnabled":
+		set {_result} to event.getInventory().getResult()
+		if {_result} is set:
+			if {_result} is netherite helmet, netherite chestplate, netherite leggings, netherite boots, netherite sword, netherite axe, netherite pickaxe, netherite shovel or netherite hoe:
+				event.setResult(air)
+
+# █▄▄ ▄▀█ █▄░█   █░█ █ █░░ █░░ █ █▀▀ █▀▀ █▀█   █▄▀ █ █░░ █░░ █ █▄░█ █▀▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▄█ █▀█ █░▀█   ▀▄▀ █ █▄▄ █▄▄ █ █▄█ ██▄ █▀▄   █░█ █ █▄▄ █▄▄ █ █░▀█ █▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on damage:
+	if victim is villager:
+		if attacker is player:
+			if {banVillagerKillingOption} is "&aEnabled":
+				cancel event
+				send "&cKilling villagers is not allowed on this server!" to attacker
+
+
+#█▀█ █▀▀ ▄▀█ █▀█ █░░   █▀▀ █▀█ █▀█ █░░ █▀▄ █▀█ █░█░█ █▄░█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#█▀▀ ██▄ █▀█ █▀▄ █▄▄   █▄▄ █▄█ █▄█ █▄▄ █▄▀ █▄█ ▀▄▀▄▀ █░▀█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on right click:
+	if player's tool is ender pearl:
+		if item cooldown of ender pearl for player > 1 tick:
+			stop
+		wait 2 tick
+		set item cooldown of ender pearl for player to {pearlCooldown} * 20 ticks
+
+# █▀▄ █ █▀▄▀█ █▀▀ █▄░█ █▀ █ █▀█ █▄░█ █▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▄▀ █ █░▀░█ ██▄ █░▀█ ▄█ █ █▄█ █░▀█ ▄█   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on teleport:
+	set {_to} to future event-location
+	if world of {_to} is world "world_the_end":
+		if {allowEndOption} is "&cDisabled":
+			send "&cThe End is currently disabled on this server." to player
+			cancel event
+	else if world of {_to} is world "world_nether":
+		if {allowNetherOption} is "&cDisabled":
+			send "&cThe Nether is currently disabled on this server." to player
+			cancel event
+
+#█░█░█ █ █▄░█ █▀▄   █▀▀ █░█ ▄▀█ █▀█ █▀▀ █▀▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#▀▄▀▄▀ █ █░▀█ █▄▀   █▄▄ █▀█ █▀█ █▀▄ █▄█ ██▄   █▄█ █▀▀ ░█░ █ █▄█ █░▀█	
+
+on right click:
+	if player's tool is wind charge:
+		if item cooldown of wind charge for player > 1 tick:
+			stop
+		wait 2 tick
+		set item cooldown of wind charge for player to {windChargeCooldown} * 20 ticks
+
+#█▀▄▀█ ▄▀█ █▀▀ █▀▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+#█░▀░█ █▀█ █▄▄ ██▄   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on damage:
+	if attacker's tool is mace:
+		if item cooldown of mace for attacker > 1 tick:
+			cancel event
+			stop
+		set item cooldown of mace for attacker to {maceCooldown} * 20 ticks
+
+# █▀█ █░█ █▀█   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# █▀▀ ▀▄▀ █▀▀   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on damage:
+    if {PvpBanOption} is "&cDisabled":
+        if victim is player:
+            if attacker is player:
+                cancel event
+
+# ▀█▀ █▄░█ ▀█▀   █▀▄▀█ █ █▄░█ █▀▀ █▀▀ ▄▀█ █▀█ ▀█▀   █▀█ █▀█ ▀█▀ █ █▀█ █▄░█
+# ░█░ █░▀█ ░█░   █░▀░█ █ █░▀█ ██▄ █▄▄ █▀█ █▀▄ ░█░   █▄█ █▀▀ ░█░ █ █▄█ █░▀█
+
+on explosion:
+	if event-entity is minecart with tnt:
+		if {banMinecartOption} is "&aEnabled":
+			cancel event
+on damage:
+	if attacker is a minecart with tnt:
+		if {banMinecartOption} = "&aEnabled":
+			cancel event
+
+
+
+#█▀█ █▀█ ▀█▀ █ █▀█ █▄░█ █▀
+#█▀▀ █▄█ ░█░ █ █▄█ █░▀█ ▄█
+
+on entity potion effect modification of strength:
+    if {banStrengthPotionsOption} is "&aEnabled":
+        cancel event
+        send "&cYou can't use the Strength potion" to player
+
+
+on entity potion effect modification:
+    if {ban::all} is "&aEnabled":
+        cancel event
+        send "&cAll potions are banned on this server!" to player
+
+on entity potion effect modification of swiftness:
+	if {ban::swiftness} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Swiftness potion" to player
+
+on entity potion effect modification of regeneration:
+	if {ban::regeneration} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Regeneration potion" to player
+
+on entity potion effect modification of luck:
+	if {ban::luck} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Luck potion" to player
+
+on entity potion effect modification of fire resistance:
+	if {ban::fire_resistance} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Fire Resistance potion" to player
+
+on entity potion effect modification of instant health:
+	if {ban::healing} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Healing potion" to player
+
+on entity potion effect modification of damage:
+	if {ban::harming} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Harming potion" to player
+
+on entity potion effect modification of jump boost:
+	if {ban::jump} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Jump Boost potion" to player
+
+on entity potion effect modification of night vision:
+	if {ban::nightvision} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Night Vision potion" to player
+
+on entity potion effect modification of invisibility:
+	if {ban::invisibility} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Invisibility potion" to player
+
+on entity potion effect modification of water breathing:
+	if {ban::waterbreathing} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Water Breathing potion" to player
+
+on entity potion effect modification of slow falling:
+	if {ban::slowfalling} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Slow Falling potion" to player
+
+on entity potion effect modification of resistance:
+	if {ban::turtlemaster} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Turtle Master potion" to player
+
+on entity potion effect modification of poison:
+	if {ban::poison} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Poison potion" to player
+
+on entity potion effect modification of weakness:
+	if {ban::weakness} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Weakness potion" to player
+
+on entity potion effect modification of slowness:
+	if {ban::slowness} is "&aEnabled":
+		cancel event
+		send "&cYou can't use the Slowness potion" to player
+
+on entity potion effect modification of strength:
+    if {ban::strength} is "&aEnabled":
+        cancel event
+        send "&cYou can't use the Strength potion" to player
+
+
+on entity potion effect modification:
+    if {ban::all} is "&aEnabled":
+        cancel event
+        send "&cAll potions are banned on this server!" to player
+
+on entity potion effect modification of swiftness:
+	if {ban::swiftness2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of regeneration:
+	if {ban::regeneration2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of luck:
+	if {ban::luck2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of fire resistance:
+	if {ban::fireresistance2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of instant health:
+	if {ban::healing2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of damage:
+	if {ban::harming2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of jump boost:
+	if {ban::jump2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of night vision:
+	if {ban::nightvision2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of invisibility:
+	if {ban::invisibility2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of water breathing:
+	if {ban::waterbreathing2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of slow falling:
+	if {ban::slowfalling2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of resistance:
+	if {ban::turtlemaster2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 Turtle Master potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of poison:
+	if {ban::poison2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of weakness:
+	if {ban::weakness2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of slowness:
+	if {ban::slowness2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+on entity potion effect modification of strength:
+	if {ban::strength2} is "&aEnabled":
+		set {_potion} to event-potion effect
+		if "%{_potion}%" contains "tier 2":
+			send "&cYou can't use Tier 2 potions on this server!" to player
+			cancel event
+
+        	
+
+		
+command /ritual:
+    permission: op
+    trigger:
+        if player's tool is not air:
+            set {_x} to rounded player's x-coordinate
+            set {_y} to rounded player's y-coordinate
+            set {_z} to rounded player's z-coordinate
+            set {_item} to player's tool
+            set {_loc} to location of player ~ vector(0, 1, 0)
+            set pitch of {_loc} to 0
+            set {_name} to smallcaps("%{_item}%")
+            play sound "entity.wither.spawn" to all players
+            broadcast "&6&l%player% &5has started a ritual at &6&l(%{_x}%, %{_y}%, %{_z}%) &5in"
+            broadcast "&a%world of player% &5for &6%{_name}%"
+            spawn text display at location of player's eyes
+            set {_displayName} to last spawned entity
+            spawn text display at location 0.3 meters below player's eyes
+            set {_displayTime} to last spawned entity
+            set text of {_displayName} to "&d%{_name}%"
+            set billboard of {_displayName} to center
+            set billboard of {_displayTime} to center
+            set {_seconds} to {ritualDurationOption} * 60
+            set {_tickblabla} to 0
+            spawn item display at {_loc}
+            set {_ritualItem} to last spawned item display
+            set item of {_ritualItem} to {_item}
+            set display scale of {_ritualItem} to vector(0.5, 0.5, 0.5)
+            set glowing of {_ritualItem} to true
+            
+            # Create boss bar for ritual
+            set {_totalSeconds} to {_seconds}
+            set {_ritualBar} to boss bar with id "ritual-bar" with title "&dRitual: %{_name}% &e(%{_x}%, %{_y}%, %{_z}%) &f- &e%{_seconds}%s" with color purple with progress 100
+            add all players to {_ritualBar}
+            
+            while {_seconds} > 0:
+                if {_tickblabla} mod 2 = 0:
+                    set {_minutesLeft} to floor({_seconds} / 60)
+                    set {_secondsLeft} to {_seconds} mod 60
+                    if {_secondsLeft} < 10:
+                        set {_displayTimeText} to "%{_minutesLeft}%:0%{_secondsLeft}%"
+                    else:
+                        set {_displayTimeText} to "%{_minutesLeft}%:%{_secondsLeft}%"
+                    set text of {_displayTime} to "&e%{_displayTimeText}%"
+                    
+                    # Update boss bar
+                    set {_progress} to ({_seconds} / {_totalSeconds}) * 100
+                    set {_ritualBar} to boss bar with id "ritual-bar"
+                    set bar title of {_ritualBar} to "&dRitual: %{_name}% &e(%{_x}%, %{_y}%, %{_z}%) &f- &e%{_seconds}%s"
+                    set bar progress of {_ritualBar} to {_progress}
+                    
+                    # Change bar color based on time remaining
+                    if {_seconds} > {_totalSeconds} / 2:
+                        set bar color of {_ritualBar} to purple
+                    else if {_seconds} > {_totalSeconds} / 4:
+                        set bar color of {_ritualBar} to blue
+                    else if {_seconds} > 10:
+                        set bar color of {_ritualBar} to yellow
+                    else:
+                        set bar color of {_ritualBar} to red
+                    
+                    remove 1 from {_seconds}
+                
+                set {_circle} to a circle of radius {ritualRadiusOption} / 2
+                if {ritualColorOption} is "&9Blue":
+                    set particle of {_circle} to dust particle using dustOption(blue, 2)
+                else if {ritualColorOption} is "&eYellow":
+                    set particle of {_circle} to dust particle using dustOption(yellow, 2)
+                else if {ritualColorOption} is "&bAqua":
+                    set particle of {_circle} to dust particle using dustOption(aqua, 2)
+                else if {ritualColorOption} is "&dFuchsia":
+                    set particle of {_circle} to dust particle using dustOption(magenta, 2)
+                else if {ritualColorOption} is "&aLime":
+                    set particle of {_circle} to dust particle using dustOption(lime, 2)
+                else if {ritualColorOption} is "&6Orange":
+                    set particle of {_circle} to dust particle using dustOption(orange, 2)
+                else if {ritualColorOption} is "&5Purple":
+                    set particle of {_circle} to dust particle using dustOption(purple, 2)
+                else if {ritualColorOption} is "&fWhite":
+                    set particle of {_circle} to dust particle using dustOption(white, 2)
+                else if {ritualColorOption} is "&0Black":
+                    set particle of {_circle} to dust particle using dustOption(black, 2)
+                else if {ritualColorOption} is "&7Gray":
+                    set particle of {_circle} to dust particle using dustOption(gray, 2)
+                else if {ritualColorOption} is "&cRed":
+                    set particle of {_circle} to dust particle using dustOption(red, 2)
+                else if {ritualColorOption} is "&2Green":
+                    set particle of {_circle} to dust particle using dustOption(green, 2)
+                draw shape {_circle} at {_loc}
+                set particle of {_circle} to enchant particle
+                draw shape {_circle} at {_loc}
+                add 1 to {_tickblabla}
+                loop 20 times:
+                    rotate {_ritualItem} around y axis by 2.5
+                    wait 1 tick
+            
+            strike lightning at {_loc}
+            broadcast "&dThe Ritual for &6%{_name}% &dhas ended!"
+            delete boss bar with id "ritual-bar"
+            kill {_displayName}
+            kill {_displayTime}
+            kill {_ritualItem}
+            wait 20 ticks
+            drop {_item} at {_loc}
+        else:
+            send "&cYou're not holding any item!" to player
+
